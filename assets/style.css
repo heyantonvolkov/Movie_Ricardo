@@ -1,0 +1,183 @@
+body, h1, h2, h3, h4, p, ul, ol, li {
+	margin: 0;
+	font-family: "Helvetica";
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+.ricardo {
+	position: relative;
+	width: 380px;
+	height: 600px;
+}
+
+.ricardo__hair {
+	position: absolute;
+	left: -20px;
+	width: 420px;
+	height: 320px;
+	background-color: #ccc8c2;
+	border-radius: 200px 200px 0 0;
+	z-index: -3;
+}
+
+.face {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fadcb6;
+	border-radius: 50%;
+	z-index: -2;
+}
+
+.face__chub {
+	position: absolute;
+	top: -80px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 10px 110px 80px 80px;
+	width: 260px;
+	height: 170px;
+	background-color: #4085e6;
+}
+
+.face__middle {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 200px;
+	height: 100px;
+}
+
+.ear {
+	position: absolute;
+	top: 0;
+	height: 150px;
+	width: 80px;
+	background-color: #fadcb6;
+	border-radius: 40%;
+}
+
+.ear:before {
+	position: absolute;
+	bottom: 17px;
+	display: block;
+	content: "";
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #4085e6;
+}
+
+.ear.-left:before {
+	right: 25px;
+}
+
+.ear.-right:before {
+	left: 25px;
+}
+
+.ear.-left {
+	left: -60px;
+}
+
+.ear.-right {
+	right: -60px;
+}
+
+.eye {
+	position: absolute;
+	width: 40px;
+	height: 60px;
+	background-color: black;
+	border-radius: 50%;
+	bottom: 0;
+}
+
+.eye.-left {
+	left: 60px;
+}
+
+.eye.-right {
+	right: 60px;
+}
+
+.eyebrow {
+	position: absolute;
+	width: 100px;
+	height: 60px;
+	background-color: #d0d;
+	border-radius: 30px 0 40px 5px;
+	top: -30px;
+}
+
+.eyebrow.-left {
+	left: 40px;
+}
+
+.eyebrow.-right {
+	right: 40px;
+}
+
+.nose {
+	position: absolute;
+	left: 150px;
+	width: 80px;
+	height: 200px;
+	border-radius: 30px 30px 15px 15px;
+	background-color: #8428df;
+}
+
+.nose:before {
+	position: absolute;
+	display: block;
+	content: "";
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 10px solid #29c252;
+	bottom: -30px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: -1;
+}
+
+.nose:after {
+	position: absolute;
+	bottom: -38px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: block;
+	content: "";
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 7px solid #29c252;
+	background-color: #31e862;
+}
+
+.mouth {
+	position: absolute;
+	bottom: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 120px;
+	height: 40px;
+	border-radius: 50%;
+	border-bottom: 15px solid #565656;
+}
